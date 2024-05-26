@@ -1,0 +1,26 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$title of static method Illuminate\\\\Support\\\\Str\\:\\:slug\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: config/cache.php
+
+		-
+			message: "#^Parameter \\#1 \\$title of static method Illuminate\\\\Support\\\\Str\\:\\:slug\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: config/database.php
+
+		-
+			message: "#^Parameter \\#2 \\$string of function explode expects string, mixed given\\.$#"
+			count: 1
+			path: config/sanctum.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 3
+			path: config/sentry.php
+
+		-
+			message: "#^Parameter \\#1 \\$title of static method Illuminate\\\\Support\\\\Str\\:\\:slug\\(\\) expects string, mixed given\\.$#"
+			count: 1
+			path: config/session.php
