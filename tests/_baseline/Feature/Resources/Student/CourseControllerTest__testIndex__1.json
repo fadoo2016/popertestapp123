@@ -1,0 +1,152 @@
+{
+    "status_code": 200,
+    "headers": {
+        "cache-control": [
+            "no-cache, private"
+        ],
+        "date": "Tue, 01 Jan 2019 00:00:00 UTC",
+        "content-type": [
+            "application\/json"
+        ],
+        "x-ratelimit-limit": [
+            "60"
+        ],
+        "x-ratelimit-remaining": [
+            "59"
+        ],
+        "access-control-allow-origin": [
+            "*"
+        ]
+    },
+    "content": {
+        "data": [
+            {
+                "id": 2,
+                "name": "Invoice paid",
+                "date": "2024-06",
+                "amount": "101.00",
+                "student": {
+                    "id": 3,
+                    "teacher_user_id": 2,
+                    "type": 1,
+                    "username": "student",
+                    "name": "Student",
+                    "avatar": null,
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                },
+                "invoice": {
+                    "id": 2,
+                    "teacher_user_id": 2,
+                    "student_user_id": 3,
+                    "course_id": 2,
+                    "status": 300,
+                    "omise_charge_id": "charge_id_1",
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                }
+            },
+            {
+                "id": 3,
+                "name": "Invoice pending payment",
+                "date": "2024-07",
+                "amount": "303.00",
+                "student": {
+                    "id": 3,
+                    "teacher_user_id": 2,
+                    "type": 1,
+                    "username": "student",
+                    "name": "Student",
+                    "avatar": null,
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                },
+                "invoice": {
+                    "id": 3,
+                    "teacher_user_id": 2,
+                    "student_user_id": 3,
+                    "course_id": 3,
+                    "status": 200,
+                    "omise_charge_id": "",
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                }
+            },
+            {
+                "id": 4,
+                "name": "Invoice created",
+                "date": "2024-08",
+                "amount": "303.00",
+                "student": {
+                    "id": 3,
+                    "teacher_user_id": 2,
+                    "type": 1,
+                    "username": "student",
+                    "name": "Student",
+                    "avatar": null,
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                },
+                "invoice": {
+                    "id": 4,
+                    "teacher_user_id": 2,
+                    "student_user_id": 3,
+                    "course_id": 4,
+                    "status": 100,
+                    "omise_charge_id": "",
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                }
+            },
+            {
+                "id": 5,
+                "name": "Invoice not create",
+                "date": "2024-08",
+                "amount": "303.00",
+                "student": {
+                    "id": 3,
+                    "teacher_user_id": 2,
+                    "type": 1,
+                    "username": "student",
+                    "name": "Student",
+                    "avatar": null,
+                    "created_at": "2019-01-01T00:00:00.000000Z",
+                    "updated_at": "2019-01-01T00:00:00.000000Z"
+                },
+                "invoice": null
+            }
+        ],
+        "links": {
+            "first": "http:\/\/te.local.gd\/api\/courses?page=1",
+            "last": "http:\/\/te.local.gd\/api\/courses?page=1",
+            "prev": null,
+            "next": null
+        },
+        "meta": {
+            "current_page": 1,
+            "from": 1,
+            "last_page": 1,
+            "links": [
+                {
+                    "url": null,
+                    "label": "&laquo; Previous",
+                    "active": false
+                },
+                {
+                    "url": "http:\/\/te.local.gd\/api\/courses?page=1",
+                    "label": "1",
+                    "active": true
+                },
+                {
+                    "url": null,
+                    "label": "Next &raquo;",
+                    "active": false
+                }
+            ],
+            "path": "http:\/\/te.local.gd\/api\/courses",
+            "per_page": 15,
+            "to": 4,
+            "total": 4
+        }
+    }
+}
