@@ -5,13 +5,12 @@
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3.0",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
-        "heroku/heroku-buildpack-php": "^257.0",
         "laravel/breeze": "^2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
