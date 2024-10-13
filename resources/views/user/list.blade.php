@@ -10,6 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
 					<div><b><a href="{{ route('user.create') }}">Create New User</a></b></div>
+					<hr/>
 					<table style="width: 100%" cellspacing="1" align="center">
 					<thead>
 						<tr>
