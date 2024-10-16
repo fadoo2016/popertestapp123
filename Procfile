@@ -1,1 +1,1 @@
-web: exec ./dyno_entrypoint.sh
+web: exec ${HEROKU_HOME}/dyno_entrypoint.sh
