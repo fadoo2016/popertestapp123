@@ -59,7 +59,17 @@ class UserController extends Controller
      */
     public function update(Request $request,User $user): RedirectResponse
     {
-		$user->fill($request->except('_token'));
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class.',email,'.$user->id],
+            'password' => ['nullable', Rules\Password::defaults()],
+        ]);
+
+		$pwd = $request->input('password');
+		if ($pwd != ""){
+			$user->password = $pwd;
+		}
+        $user->fill($request->except(['_token','password']));
 
         if ($user->isDirty('email')) {
             $user->email_verified_at = null;
