@@ -1,1 +1,1 @@
-web: exec ./dyno-entrypoint.sh
+web: ./dyno-entrypoint.sh
